@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CoreAndroidArchitecture</string>
+    <string name="app_name_dev">CoreAndroidArchitecture-Dev</string>
+</resources>
