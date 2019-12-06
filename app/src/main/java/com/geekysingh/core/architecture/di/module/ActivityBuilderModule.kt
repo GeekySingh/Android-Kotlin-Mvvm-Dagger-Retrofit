@@ -9,8 +9,8 @@ import dagger.android.ContributesAndroidInjector
  */
 
 @Module(includes = [FragmentBuilderModule::class])
-abstract class ActivityBuilderModule {
+interface ActivityBuilderModule {
 
     @ContributesAndroidInjector
-    abstract fun contributeTodoActivity(): TodoActivity
+    fun contributeTodoActivity(): TodoActivity
 }

@@ -6,7 +6,9 @@ import com.geekysingh.core.architecture.domain.entity.TodoEntity
 import com.geekysingh.core.architecture.domain.remote.response.ApiResponse
 import com.geekysingh.core.architecture.domain.remote.response.ErrorResponse
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class TodoApiResponseMapper @Inject constructor(private val mapper : TodoEntityToModelMapper)
     : BaseMapper<ApiResponse<TodoEntity>, ApiResponse<TodoModel>>() {
 

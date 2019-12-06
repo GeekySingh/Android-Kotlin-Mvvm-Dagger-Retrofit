@@ -19,6 +19,7 @@ class TodoViewModel @Inject constructor(private val useCase: TodoUseCase) : Base
     fun getTodoData(todoId : String) {
         // mark api request in progress to true
         apiRequestInProgress.value = true
+        todoData.value = null
         // launch coroutines within viewmodel scope
         viewModelScope.launch {
             // get data from network
@@ -32,7 +33,7 @@ class TodoViewModel @Inject constructor(private val useCase: TodoUseCase) : Base
                 todoDataFailureEvent.value = response.errorResponse
             }
             // mark api request in progress to false
-            apiRequestInProgress.value = true
+            apiRequestInProgress.value = false
         }
     }
 }

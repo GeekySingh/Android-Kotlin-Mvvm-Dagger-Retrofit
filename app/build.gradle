@@ -42,6 +42,11 @@ android {
             buildConfigField("String", "BASE_URL", appConfig['production_url'])
         }
     }
+
+    compileOptions {
+        targetCompatibility = "8"
+        sourceCompatibility = "8"
+    }
 }
 
 dependencies {

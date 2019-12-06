@@ -4,7 +4,9 @@ import com.geekysingh.core.architecture.data.mapper.base.BaseMapper
 import com.geekysingh.core.architecture.data.model.TodoModel
 import com.geekysingh.core.architecture.domain.entity.TodoEntity
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class TodoEntityToModelMapper @Inject constructor() : BaseMapper<TodoEntity, TodoModel>() {
 
     override fun map(entity: TodoEntity?): TodoModel? {

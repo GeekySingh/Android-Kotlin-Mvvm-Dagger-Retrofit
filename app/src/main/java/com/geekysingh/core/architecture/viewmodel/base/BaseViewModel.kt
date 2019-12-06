@@ -9,4 +9,8 @@ open class BaseViewModel : ViewModel() {
 
     val apiRequestInProgress = MutableLiveData<Boolean>()
     val title = MutableLiveData<String>()
+
+    init {
+        apiRequestInProgress.value = false
+    }
 }

@@ -1,6 +1,5 @@
 package com.geekysingh.core.architecture.view.activity.base
 
-import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import androidx.annotation.LayoutRes
@@ -36,8 +35,6 @@ abstract class BaseActivity<VM : BaseViewModel, VDB : ViewDataBinding> : AppComp
     abstract val bindingVariable: Int
 
     abstract val viewModelClass: Class<VM>
-
-    private lateinit var progressDialog : Dialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

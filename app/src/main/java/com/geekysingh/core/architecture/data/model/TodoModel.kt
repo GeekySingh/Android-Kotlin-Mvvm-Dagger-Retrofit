@@ -6,6 +6,6 @@ data class TodoModel(
     val title: String
 ) {
     override fun toString(): String {
-        return "Title: $title, Completed: $completed"
+        return "Title: $title,\n Completed: $completed"
     }
 }

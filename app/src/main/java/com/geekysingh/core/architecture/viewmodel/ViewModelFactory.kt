@@ -22,7 +22,7 @@ class ViewModelFactory
             }
         }
         if (creator == null) {
-            throw IllegalArgumentException("unknown view model class $modelClass")
+            throw IllegalArgumentException("View model class not found in ViewModelModule $modelClass")
         }
         try {
             return creator.get() as T
@@ -30,5 +30,4 @@ class ViewModelFactory
             throw RuntimeException(e)
         }
     }
-
 }

@@ -25,7 +25,7 @@ class TodoActivity : BaseActivity<TodoViewModel, ActivityTodoBinding>() {
 
     private fun observeTodoDataFailureEvent() {
         viewModel.todoDataFailureEvent.observe(this, Observer {
-            Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Error: $it", Toast.LENGTH_SHORT).show()
             Logger.Error(TAG, "Todo data fetch failed -> $it")
         })
     }

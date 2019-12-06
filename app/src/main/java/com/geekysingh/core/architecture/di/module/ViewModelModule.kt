@@ -18,6 +18,5 @@ interface ViewModelModule {
     @Binds
     @IntoMap
     @ViewModelKey(TodoViewModel::class)
-    fun bindTodoViewModels(loginViewModel: TodoViewModel): ViewModel
-
+    fun bindTodoViewModel(todoViewModel: TodoViewModel): ViewModel
 }

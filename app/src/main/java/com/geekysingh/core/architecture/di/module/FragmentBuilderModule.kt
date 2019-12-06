@@ -7,7 +7,7 @@ import dagger.Module
  */
 
 @Module
-abstract class FragmentBuilderModule {
+interface FragmentBuilderModule {
 
     //@ContributesAndroidInjector
     //abstract fun contributeTodoFragment(): TodoFragment

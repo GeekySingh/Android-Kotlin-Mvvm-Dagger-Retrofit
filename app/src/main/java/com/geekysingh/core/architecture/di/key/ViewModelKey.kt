@@ -5,7 +5,6 @@ import dagger.MapKey
 import kotlin.reflect.KClass
 
 @MapKey
-@MustBeDocumented
-@Target(AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER)
+@Target(AnnotationTarget.FUNCTION)
 @Retention(AnnotationRetention.RUNTIME)
 internal annotation class ViewModelKey(val value: KClass<out ViewModel>)
