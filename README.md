@@ -3,8 +3,9 @@ This sample demonstrate core application architecture for Android application us
 
 ## Highlights
 1. Android project structure
-2. Android architecture components - LiveData, ViewModel
-3. Data binding
-4. Kotlin
-5. Dagger2
-6. Retrofit
+2. Clean code
+3. Android architecture components - LiveData, ViewModel
+4. Data binding
+5. Kotlin
+6. Dagger2
+7. Retrofit
